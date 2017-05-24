@@ -72,15 +72,17 @@ exports.resetPasswordInit = email =>
  
 			const mailOptions = {
 
+				//
+
     			from: `"${config.name}" <${config.email}>`,
     			to: email,  
-    			subject: 'Reset Password Request ', 
-    			html: `Hello ${user.name},<br><br>
-    			&nbsp;&nbsp;&nbsp;&nbsp; Your reset password token is <b>${random}</b>. 
-    			If you are viewing this mail from a Android Device click this <a href = "http://learn2crack/${random}">link</a>. 
-    			The token is valid for only 2 minutes.<br><br>
-    			Thanks,<br>
-    			Learn2Crack.`
+    			subject: 'Cambio de contraseña ', 
+    			html: `Hola ${user.name},<br><br>
+    			&nbsp;&nbsp;&nbsp;&nbsp; Tu token para resetear tu contraseña es: <b>${random}</b>. 
+    			Si estas viendo este correo desde tu dispositivo Android has click aqui <a href = "http://learn2crack/${random}">link</a>. 
+    			El token es valido por 2 minutos, por seguridad.<br><br>
+    			Gracias,<br>
+    			Nicolas Escobar Cruz.`
     		
 			};
 
