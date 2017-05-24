@@ -1,6 +1,8 @@
 
 # RESTful API using Node.js and MongoDB
 
+The following project is a modification of the original work of https://www.learn2crack.com/2016/09/android-user-registration-login-node-server.html
+
 To Run Project
 --------
 1.Switch to __node-login__ directory. Then,
