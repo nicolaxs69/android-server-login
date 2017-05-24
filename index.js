@@ -14,9 +14,8 @@ require('./routes')(router);
 app.use('/api/v1', router);
 
 // app.listen(port);
-
-app.listen(process.env.PORT || 8080, function() {
-    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env)
-});
-
 //console.log(`App Runs on ${port}`);
+
+app.listen(process.env.PORT || 5000, function () {
+  console.log('Server running');
+})
